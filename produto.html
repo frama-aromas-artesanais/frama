@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Produto</title>
+<meta name="description" content="Detalhes do produto artesanal. Peça pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Karla:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container header-in">
+    <a class="logo" href="#topo"><!-- substitua pelo logo --><b data-brand></b><small>Aromas Artesanais</small></a>
+    <nav class="nav">
+      <a href="#topo">Início</a><a href="index.html?categoria=velas#catalogo" data-cat="velas">Velas</a><a href="index.html?categoria=aromatizadores#catalogo" data-cat="aromatizadores">Aromas</a><a href="index.html?categoria=sabonetes#catalogo" data-cat="sabonetes">Sabonetes</a><a href="index.html?categoria=kits#catalogo" data-cat="kits">Kits</a><a href="#sobre">Sobre</a>
+    </nav>
+    <div style="display:flex;gap:.5rem;align-items:center">
+      <a class="btn btn-terracotta header-cta" data-wa data-icon="whatsapp">Fale pelo WhatsApp</a>
+      <button type="button" id="menu-btn" class="menu-btn" aria-label="Menu" aria-expanded="false"></button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav"><nav class="container">
+    <a href="#topo">Início</a><a href="index.html?categoria=velas#catalogo" data-cat="velas">Velas</a><a href="index.html?categoria=aromatizadores#catalogo" data-cat="aromatizadores">Aromas</a><a href="index.html?categoria=sabonetes#catalogo" data-cat="sabonetes">Sabonetes</a><a href="index.html?categoria=kits#catalogo" data-cat="kits">Kits</a><a href="#sobre">Sobre</a>
+    <a class="btn btn-terracotta" data-wa data-icon="whatsapp">Fale pelo WhatsApp</a>
+  </nav></div>
+</header>
+<main><div class="container" id="product"></div><div id="related"></div></main>
+<footer class="footer">
+  <div class="container footer-in">
+    <div>
+      <p class="logo"><b data-brand></b></p>
+      <p class="muted" style="margin-top:1rem;max-width:24rem;font-size:.875rem;line-height:1.7" data-site="footerNote"></p>
+      <div class="socials"><a data-wa aria-label="WhatsApp" data-icon="whatsapp"></a><a id="ig" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-icon="instagram"></a></div>
+    </div>
+    <div><h3 class="eyebrow">Categorias</h3><ul id="footer-cats"></ul></div>
+    <div><h3 class="eyebrow">Contato</h3><ul><li data-site="instagramHandle"></li><li data-site="email"></li><li data-site="city"></li><li>Pedidos pelo WhatsApp</li></ul></div>
+  </div>
+  <div class="container copy">© <span id="year"></span> <span data-brand></span>. Todos os direitos reservados.</div>
+</footer>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

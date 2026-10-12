@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Velas, aromatizadores e sabonetes artesanais</title>
+<meta name="description" content="Catálogo de velas aromáticas, aromatizadores de ambiente, sabonetes artesanais e kits para presente. Peça pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Karla:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container header-in">
+    <a class="logo" href="./img/logo frama.png"><!-- substitua pelo logo --><b data-brand></b><small>Aromas Artesanais</small></a>
+    <nav class="nav">
+      <a href="#topo">Início</a><a href="?categoria=velas#catalogo" data-cat="velas">Velas</a><a href="?categoria=aromatizadores#catalogo" data-cat="aromatizadores">Aromas</a><a href="?categoria=sabonetes#catalogo" data-cat="sabonetes">Sabonetes</a><a href="?categoria=kits#catalogo" data-cat="kits">Kits</a><a href="#sobre">Sobre</a>
+    </nav>
+    <div style="display:flex;gap:.5rem;align-items:center">
+      <a class="btn btn-terracotta header-cta" data-wa data-icon="whatsapp">Fale pelo WhatsApp</a>
+      <button type="button" id="menu-btn" class="menu-btn" aria-label="Menu" aria-expanded="false"></button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav"><nav class="container">
+    <a href="#topo">Início</a><a href="?categoria=velas#catalogo" data-cat="velas">Velas</a><a href="?categoria=aromatizadores#catalogo" data-cat="aromatizadores">Aromas</a><a href="?categoria=sabonetes#catalogo" data-cat="sabonetes">Sabonetes</a><a href="?categoria=kits#catalogo" data-cat="kits">Kits</a><a href="#sobre">Sobre</a>
+    <a class="btn btn-terracotta" data-wa data-icon="whatsapp">Fale pelo WhatsApp</a>
+  </nav></div>
+</header>
+<main>
+<section id="topo" class="hero"><div class="container hero-in">
+  <div class="rise">
+    <p class="eyebrow">Velas · Aromatizadores · Sabonetes</p>
+    <h1>Aromas que transformam momentos.</h1>
+    <div class="rule"></div>
+    <p class="lead">Produtos artesanais feitos para trazer aconchego, cuidado e personalidade para os seus espaços e para a sua rotina.</p>
+    <div class="hero-actions"><a href="#catalogo" class="btn btn-primary">Ver catálogo</a><a class="btn btn-outline" data-wa data-icon="whatsapp">Falar pelo WhatsApp</a></div>
+  </div>
+  <div class="hero-img"><img src="img/hero.png" alt="Velas aromáticas, aromatizador e sabonetes artesanais sobre tecido de linho" width="1408" height="1600"></div>
+</div></section>
+
+<section id="categorias" class="pad"><div class="container">
+  <div class="head"><p class="eyebrow">Categorias</p><h2 class="mt3">Escolha por onde começar</h2></div>
+  <div class="grid grid-cat" id="cat-grid"></div>
+</div></section>
+
+<section id="destaques" class="pad alt"><div class="container">
+  <div class="head-row"><div class="head"><p class="eyebrow">Seleção da casa</p><h2 class="mt3">Mais desejados</h2></div><a href="#catalogo" class="link">Ver catálogo completo</a></div>
+  <div class="grid grid-prod" id="featured-grid"></div>
+</div></section>
+
+<section id="catalogo" class="pad"><div class="container">
+  <div class="head"><p class="eyebrow">Catálogo completo</p><h2 class="mt3">Encontre seu aroma</h2>
+  <p class="muted" style="margin-top:1rem;font-size:.875rem">Navegue por categoria e toque em um produto para ver todos os detalhes.</p></div>
+  <div class="filters" id="filters"></div>
+  <div class="grid grid-prod" id="catalog-grid"></div>
+</div></section>
+
+<section class="pad"><div class="container split sens">
+  <div><p class="eyebrow">Experiência sensorial</p><h2 class="mt3">Mais do que produtos. Experiências.</h2><div class="rule"></div>
+  <p class="lead">Cada produto é pensado para despertar sensações, criar momentos e transformar pequenos cuidados em experiências especiais.</p></div>
+  <div class="mosaic">
+    <img class="rounded" style="aspect-ratio:3/4" src="img/texturas.jpg" alt="Pétalas de rosas, lavanda e cera vegetal sobre linho" loading="lazy">
+    <div><img class="rounded" style="aspect-ratio:1" src="img/velas.png" alt="Vela artesanal em recipiente de cerâmica" loading="lazy"><img class="rounded" style="aspect-ratio:1" src="img/atelier.jpg" alt="Processo artesanal de produção das velas" loading="lazy"></div>
+  </div>
+</div></section>
+
+<section id="sobre" class="pad alt"><div class="container split">
+  <img class="rounded" style="aspect-ratio:4/3" src="img/atelier.jpg" alt="Produção artesanal das velas no ateliê" loading="lazy">
+  <div>
+    <p class="eyebrow">Sobre a marca</p><h2 class="mt3">Feito à mão, pensado nos detalhes.</h2><div class="rule"></div>
+    <p class="lead" style="max-width:none">Cada produto é produzido artesanalmente, com atenção aos detalhes, escolha cuidadosa das fragrâncias e carinho em cada etapa.</p>
+    <p class="lead" style="max-width:none;margin-top:1rem">[Espaço para a história da marca: como tudo começou, quem está por trás da produção e o que torna cada peça única. Inclua aqui também a foto da proprietária.]</p>
+    <dl class="valores">
+      <div><dt>Feito em pequenos lotes</dt><dd>[Produção artesanal, com controle de cada etapa.]</dd></div>
+      <div><dt>Fragrâncias selecionadas</dt><dd>[Essências escolhidas com critério e testadas.]</dd></div>
+      <div><dt>Embalagem cuidadosa</dt><dd>[Cada pedido é embalado pronto para presentear.]</dd></div>
+    </dl>
+    <p class="muted" style="margin-top:2rem;font-size:.75rem">Atendimento em <span data-site="city"></span> e envios combinados pelo WhatsApp.</p>
+  </div>
+</div></section>
+
+<section id="kits" class="pad"><div class="container"><div class="card kits">
+  <img src="./img/kits.png" alt="Kit presente com vela, sabonete e aromatizador em caixa artesanal" loading="lazy">
+  <div class="kits-body"><p class="eyebrow">Kits &amp; Presentes</p><h2 class="mt3">Presentes que despertam sentidos.</h2><div class="rule"></div>
+  <p class="lead">Combinações montadas à mão, com embalagem pronta para presentear. Ideais para datas comemorativas e lembranças especiais.</p>
+  <button type="button" class="btn btn-primary" data-select="kits" data-icon="arrow" data-pos="beforeend">Conhecer os kits </button></div>
+</div></div></section>
+
+<section class="cta pad"><div class="container" style="max-width:42rem">
+  <h2>Encontrou seu favorito?</h2>
+  <p>Fale com a gente pelo WhatsApp para consultar disponibilidade, fragrâncias, kits personalizados e fazer seu pedido.</p>
+  <a class="btn btn-terracotta" data-wa data-icon="whatsapp">Falar pelo WhatsApp</a>
+</div></section>
+</main>
+<footer class="footer">
+  <div class="container footer-in">
+    <div>
+      <p class="logo"><b data-brand></b></p>
+      <p class="muted" style="margin-top:1rem;max-width:24rem;font-size:.875rem;line-height:1.7" data-site="footerNote"></p>
+      <div class="socials"><a data-wa aria-label="WhatsApp" data-icon="whatsapp"></a><a id="ig" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-icon="instagram"></a></div>
+    </div>
+    <div><h3 class="eyebrow">Categorias</h3><ul id="footer-cats"></ul></div>
+    <div><h3 class="eyebrow">Contato</h3><ul><li data-site="instagramHandle"></li><li data-site="email"></li><li data-site="city"></li><li>Pedidos pelo WhatsApp</li></ul></div>
+  </div>
+  <div class="container copy">© <span id="year"></span> <span data-brand></span>. Todos os direitos reservados.</div>
+</footer>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
