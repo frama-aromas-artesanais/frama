@@ -12,6 +12,13 @@ const site = {
 
 const categories = [
   {
+    id: "natal",
+    name: "Natal",
+    short: "Natal",
+    description: "Opções de produtos artesanais para o natal",
+    image: "img/vela-aromatizador-natal.jpeg",
+  },
+  {
     id: "velas",
     name: "Velas Aromáticas",
     short: "Velas",
@@ -50,23 +57,7 @@ const categories = [
 
 /* PRODUTOS — copie um bloco para adicionar. slug deve ser único. */
 const products = [
-  {
-    slug: "vela-aromatica-baunilha",
-    name: "Vela Aromática — Baunilha",
-    category: "velas",
-    fragrance: "Baunilha",
-    price: "A partir de R$",
-    shortDescription:
-      "Fragrância cremosa e envolvente para criar uma atmosfera acolhedora.",
-    fullDescription:
-      "Uma vela de fragrância cremosa e envolvente, pensada para momentos de pausa. A queima lenta perfuma o ambiente com suavidade, sem enjoar.",
-    composition: "[Cera vegetal, essência de baunilha, pavio de algodão]",
-    usage:
-      "Apare o pavio antes de cada uso e mantenha acesa por no máximo 3 horas.",
-    availability: "[Pronta entrega]",
-    featured: true,
-    image: "img/velas.png",
-  },
+
   {
     slug: "aromatizador-flor-de-algodao",
     name: "Aromatizador de Ambiente — Flor de Algodão",
@@ -125,7 +116,7 @@ const products = [
     name: "Hidratante labial",
     category: "hidratante",
     fragrance: "Manteiga",
-    price: "A partir de R$10,00",
+    price: "R$10,00",
     shortDescription: "Hidratante labial com manteiga",
     fullDescription:
       "Uma vela de fragrância cremosa e envolvente, pensada para momentos de pausa. A queima lenta perfuma o ambiente com suavidade, sem enjoar.",
@@ -140,7 +131,7 @@ const products = [
     name: "Sabonete Artesanal Massageador",
     category: "sabonetes",
     fragrance: "Melancia",
-    price: "A partir de R$9,50",
+    price: "R$9,50",
     shortDescription: "Limpeza suave com uma fragrância relaxante.",
     fullDescription:
       "Sabonete em barra produzido em pequenos lotes, com espuma cremosa e perfume calmante de lavanda. Embalagem em papel kraft, pronta para presentear.",
@@ -156,7 +147,7 @@ const products = [
     name: "Sabonete em barra maracujá",
     category: "sabonetes",
     fragrance: "Maracujá",
-    price: "A partir de R$9,50",
+    price: "R$9,50",
     shortDescription: "Limpeza suave com uma fragrância relaxante.",
     fullDescription:
       "Sabonete em barra produzido em pequenos lotes, com espuma cremosa e perfume calmante de lavanda. Embalagem em papel kraft, pronta para presentear.",
@@ -172,7 +163,7 @@ const products = [
     name: "Geleia de banho",
     category: "sabonetes",
     fragrance: "Lavanda, morango e maracujá",
-    price: "A partir de R$38,50",
+    price: "R$38,50",
     shortDescription: "Limpeza suave com uma fragrância relaxante.",
     fullDescription:
       "Geleia de banho hipoalérgica disponível em 3 fragrâncias: lavanda, morango e maracujá.",
@@ -186,7 +177,7 @@ const products = [
     name: "Sabonete em barra Morango",
     category: "sabonetes",
     fragrance: "Morango",
-    price: "A partir de R$9,50",
+    price: "R$9,50",
     shortDescription: "Limpeza suave com uma fragrância relaxante.",
     fullDescription:
       "Sabonete em barra produzido em pequenos lotes, com espuma cremosa e perfume calmante de lavanda. Embalagem em papel kraft, pronta para presentear.",
@@ -196,5 +187,39 @@ const products = [
     availability: "[Consultar disponibilidade]",
     featured: true,
     image: "img/sabonete-barra-rosa.jpeg",
+  },
+  {
+    slug: "vela-metalica-coco",
+    name: "Vela de Coco em embalagem metálica",
+    category: "velas",
+    fragrance: "Coco",
+    price: "R$34,50",
+    shortDescription:
+      "Vela em embalagem metálica com cera de coco",
+    fullDescription:
+      "Uma vela de fragrância de coco, pensada para momentos de pausa. A queima lenta perfuma o ambiente com suavidade, sem enjoar.",
+    composition: "[Cera de coco e essência de coco]",
+    usage:
+      "Apare o pavio antes de cada uso e mantenha acesa por no máximo 3 horas.",
+    availability: "[Consultar disponibilidade]",
+    featured: true,
+    image: "img/vela-metalica-coco.jpeg",
+  },
+  {
+    slug: "vela-anjo-da-guarda",
+    name: "Vela Anjo da Guarda",
+    category: "velas",
+    fragrance: "Coco",
+    price: " R$ 10,00 a unidade",
+    shortDescription:
+      "Vela com formato de anjo da guarda com cera de coco e essência de coco",
+      fullDescription:
+      "",
+    composition: "[Cera de coco e essência de coco]",
+    usage:
+      "Apare o pavio antes de cada uso e mantenha acesa por no máximo 3 horas.",
+    availability: "[Consultar disponibilidade]",
+    featured: true,
+    image: "img/anjo.jpeg",
   },
 ];
